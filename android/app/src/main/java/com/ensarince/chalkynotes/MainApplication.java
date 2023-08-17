@@ -14,6 +14,7 @@ import com.facebook.soloader.SoLoader;
 
 import expo.modules.ApplicationLifecycleDispatcher;
 import expo.modules.ReactNativeHostWrapper;
+import com.swmansion.rnscreens.RNScreensPackage;
 
 import java.util.List;
 
@@ -34,6 +35,23 @@ public class MainApplication extends Application implements ReactApplication {
         // packages.add(new MyReactNativePackage());
         return packages;
       }
+
+      @Override
+        protected List<ReactPackage> getPackages() {
+          @SuppressWarnings("UnnecessaryLocalVariable")
+          List<ReactPackage> packages = new PackageList(this).getPackages();
+          packages.add(new com.swmansion.rnscreens.RNScreensPackage());
+          return packages;
+        }
+
+        @Override
+        protected List<ReactPackage> getPackages() {       
+          return Arrays.<ReactPackage>asList(
+              new MainReactPackage(),  
+                ...
+                new RNScreensPackage()
+          );
+        }
 
       @Override
       protected String getJSMainModuleName() {

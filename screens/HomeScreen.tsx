@@ -24,18 +24,14 @@ const HomeScreen = () => {
 
   return (
     <View style={tw`h-full w-full flex items-center justify-center bg-[#00ADB5]`}>
-      <ImageBackground
-        source={require('../assets/img/main.png')}
-        style={tw`h-full w-full`}
-      >
-        <View style={tw`pt-15 flex items-center gap-5  p-5`}>
+        <View style={tw`pt-15 flex items-center gap-5 p-5`}>
           <Ionicons name="person-circle" size={64} color="white" />
           <Text style={tw`text-white text-2xl font-bold text-center`}>
             Welcome,{'\n'}
             {user?.email}
           </Text>
         </View>
-        <View style={tw`mt-10 p-4 bg-white rounded-3xl m-2`}>
+        <View style={tw`mt-10 p-4 bg-white rounded-3xl mx-4 w-98`}>
           <Text style={tw`text-gray-700 text-lg font-semibold mb-2 text-center`}>
             Your Recent Climbs
           </Text>
@@ -48,7 +44,6 @@ const HomeScreen = () => {
         >
           <Text style={tw`text-[#00ADB5] font-semibold text-lg`}>View Dashboard</Text>
         </TouchableOpacity> */}
-      </ImageBackground>
     </View>
   );
 };

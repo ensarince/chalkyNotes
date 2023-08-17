@@ -30,11 +30,7 @@ const DashboardScreen = (props: Props) => {
 
   return (
     <ScrollView contentContainerStyle={tw`h-full w-full items-center justify-start bg-[#00ADB5]`}>
-      <ImageBackground
-        source={require('../assets/img/dashboard.png')}
-        style={tw`h-full w-full`}
-      >
-        <View style={tw`bg-white mt-15 rounded-lg p-4 mx-2`}>
+        <View style={tw`bg-white mt-15 rounded-lg p-4 mx-2 w-98`}>
           <Text style={tw`text-gray-700 text-lg font-semibold mb-2`}>Climbing Statistics</Text>
           <View style={tw`flex-row justify-between items-center mb-2`}>
             <Text>Total Climbs: {climbingStatistics.totalClimbs}</Text>
@@ -42,7 +38,7 @@ const DashboardScreen = (props: Props) => {
             <Text>Success Rate: {climbingStatistics.successRate}</Text>
           </View>
         </View>
-        <View style={tw`bg-white rounded-lg p-4 mt-4 mx-2`}>
+        <View style={tw`bg-white rounded-lg p-4 mt-4 mx-4 w-98`}>
           <Text style={tw`text-gray-700 text-lg font-semibold mb-2`}>Recent Climbs</Text>
           {recentClimbs.map((climb) => (
             <View key={climb.id} style={tw`flex-row justify-between items-center mb-2`}>
@@ -54,7 +50,6 @@ const DashboardScreen = (props: Props) => {
             </View>
           ))}
         </View>
-      </ImageBackground>
       {/* <Image
         source={require('../assets/img/dashboard.png')} // Add your dashboard image
         style={tw`mt-4 w-80 h-60`}
