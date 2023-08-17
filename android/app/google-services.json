@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "740962427455",
+    "project_id": "chalkynotes",
+    "storage_bucket": "chalkynotes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740962427455:android:e21dfe5c523ba6ca87ce8a",
+        "android_client_info": {
+          "package_name": "com.ensarince.chalkynotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740962427455-25hrqr96mi5aq2kvvv8hri2j21lgh7i6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSv9k02tZFMkbgXytNATA6xWsfP1wSyBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740962427455-25hrqr96mi5aq2kvvv8hri2j21lgh7i6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

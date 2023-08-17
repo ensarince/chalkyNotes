@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ChalkyNotes",
-    "slug": "ChalkyNotes",
+    "slug": "chalkynotes",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ensarince.chalkynotes"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0498b120-da9e-418d-a7f6-508cfce2cf30"
+      }
+    },
+    "owner": "ensarince"
   }
 }

@@ -1,0 +1,33 @@
+
+$chalky_white: #EEEEEE;
+$chalky_blue: #00ADB5;
+$chalky_gray: #393E46;
+$chalky_black: #222831;
+
+$chalky_purple_hard: #461959;
+$chalky_purple: #7A316F;
+$chalky_pink: #CD6688;
+$chalky_turquiose: #AED8CC;
+
+$chalky_blue_hard: #08D9D6;
+$chalky_black_2: #252A34;
+$chalky_red: #FF2E63;
+$chalky_white_2: #EAEAEA;
+
+$xs: 320px;
+$sm: 481px;
+$md: 769px;
+$lg: 1025px;
+$xl: 1201px;
+
+:export {
+    chalky_white: $chalky_white;
+    chalky_blue: $chalky_blue;
+    chalky_gray: $chalky_gray;
+    chalky_black: $chalky_black;
+    xs: $xs;
+    sm: $sm;
+    md: $md;
+    lg: $lg;
+    xl: $xl;
+}
